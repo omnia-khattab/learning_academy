@@ -1,0 +1,1 @@
+<h1>Welcome {{$name}} to Our WebSite</h1>
