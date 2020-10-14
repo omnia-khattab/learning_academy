@@ -52,11 +52,16 @@ Courses
                     <div class="col-sm-6 col-lg-4 mb-4">
                         <div class="single_special_cource">
                             <img src="{{asset($course->img)}}" class="special_img" alt="">
+
                             <div class="special_cource_text">
+
                                 <a href="{{route('course.category',$course->category_id)}}" class="btn_4">{{$course->category->name}}</a>
+                                
                                 <h4>${{$course->price}}</h4>
+                                
                                 <a href="{{route('course.details',$course->id)}}"><h3>{{$course->name}}</h3></a>
-                                <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                
+                                <p>{{substr($course->desc, 0, 200)}}</p>
                             </div>
                         </div>
                     </div>
@@ -97,15 +102,22 @@ Courses
                             <div class="col-sm-6 col-lg-4 mb-4">
                                 <div class="single_special_cource">
                                     <img src="{{asset('${course.img}')}}" class="special_img" alt="">
+                                    
                                     <div class="special_cource_text">
-                                        <a href="{{url('/courses/category/')}}/${course.category_id}" class="btn_4">${course.category.name}</a>
+                                        
+                                        <a href="{{url('/courses/category')}}/${course.category_id}" class="btn_4">
+                                            ${course.category.name}
+                                        </a>
+                                        
                                         <h4>$ ${course.price}</h4>
-                                        <a href="{{url('/courses/details/')}}/${course.id}"><h3>${course.name}</h3></a>
-                                        <p>Which whose darkness saying were life unto fish wherein all fish of together called</p>
+                                        
+                                        <a href="{{url('/courses/details')}}/${course.id}"><h3>${course.name}</h3></a>
+                                        
+                                        <p>${course.desc.substring( 0, 200)}</p>
                                     </div>
                                 </div>
                             </div>
-                        `)
+                        `);
                     }
             }
 

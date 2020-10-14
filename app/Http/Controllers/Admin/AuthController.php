@@ -42,7 +42,7 @@ class AuthController extends Controller
         return redirect(route('admin.login'));
     }
 //social Login
-    public function redirectToProvider()
+    /*public function redirectToProvider()
     {
         return Socialite::driver('github')->redirect();
     }
@@ -73,5 +73,5 @@ class AuthController extends Controller
         }
 
         return redirect(Route('admin.home'));
-    }
+    }*/
 }

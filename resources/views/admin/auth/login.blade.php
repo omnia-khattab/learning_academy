@@ -36,9 +36,9 @@
                     <div class="form-group mt-3 ml-3">
                         <button type="submit" class="button button-contactForm btn_1">Login</button>
                     </div>
-                    <div class="form-group mt-3 ml-3">
-                        <a href="{{route('admin.github.redirect')}}" type="submit" class="btn btn-dark">Login with Github</a>
-                    </div>
+                    <!--<div class="form-group mt-3 ml-3">
+                        <a href="" type="submit" class="btn btn-dark">Login with Github</a>
+                    </div>-->
                 </form>
             </div>
         </div>
